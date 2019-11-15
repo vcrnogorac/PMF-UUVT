@@ -1,0 +1,108 @@
+
+#wrapper{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header_footer{
+    border: 1px groove black;
+    border-radius: 5px; 
+    text-align: center;
+    background-color: rgba(176, 176, 176, 0.5)
+}
+
+h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.podnaslov_4 {
+    margin:0px;
+    height: 24px;
+    border: 2px dotted rgb(169, 164, 184);
+    background-color: burlywood;
+    padding-left: 3px;
+}
+
+#navigaion{
+    width: 30%;
+    height: 300px;
+    display:inline-block;
+    vertical-align: top;
+}
+
+#content{
+    width: 70%;
+    height: 300px;
+    display:inline-block;
+    vertical-align: top;
+}
+
+#zakljucak{
+    border: 2px inset rgba(176, 176, 176, 0.5);
+}
+
+.vc-color-1{
+    background-color:rgb(129, 235, 134);
+}
+            
+.vc-color-2{
+    background-color:rgb(169, 164, 184);
+}
+
+.vc-color-3{
+    background-color:rgb(214, 158, 118);
+}
+
+.vc-color-4{
+    background-color:rgb(0, 247, 255);
+}
+
+.vc-height-nav{
+    height: 50px;
+    width: 100%;
+}
+
+.vc-height-main{
+    height: 75px;
+    width: 100%;
+}
+
+.okvir_sadrzaja{
+    overflow: auto;
+    height: 270px;
+}
+
+.sadrzaj_liste{
+    float: left;
+    width: 100%;
+}
+
+#zakljucak_okvir_sadrzaja{
+    min-height: 75px;
+    max-height: 150px;
+}
+
+.vc-color-5{
+    background-color:rgb(70, 92, 10);
+}
+
+.vc-color-6{
+    background-color:rgb(161, 204, 42);
+}
+
+.vc-height-zakljucak{
+    height: 50px;
+    width: 100%;
+}
+
+div {
+    margin: 0px;
+}
+
+.vc-omotac-sadrzaja{
+    width: 100%;
+    border: 1px double black;
+    border-radius: 5px;
+}

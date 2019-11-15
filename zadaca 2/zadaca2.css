@@ -1,0 +1,147 @@
+﻿#omotac{
+    width: 90%;
+    margin: auto;
+    /* Питање за студенте: зашто користим padding-top и padding-bottom */
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+#header{
+    top: 0px;
+}
+#footer{
+    bottom: 0px;
+    height: 25px;
+}
+.head-foot{
+    position: fixed;
+    width: 90%;
+    left: 5%;
+    background-color: silver;
+    text-align: center;
+    border: black 2px solid;
+    border-radius: 5px;
+	z-index: 5;
+}
+.head-foot>h1{
+    margin: 0px;
+}
+#vrh{
+    text-align: center;
+}
+#vrh>a:link{
+    text-decoration: none;
+}
+#vrh>a:vertical{
+    text-decoration: none;
+}
+#vrh>a:active{
+    text-decoration: none;
+    cursor: wait;
+}
+#naziv-i-opis-slika{
+    border: red 1px solid;
+    /* Питање за студенте: зашто користим position */
+    position: relative;
+}
+#naziv-slika{
+    width: 30%;
+    height: 100%;
+    vertical-align: top;
+    border: 1px black dotted;
+}
+#opis-slika{
+    position: absolute;
+    top: 0px;
+    left: 30%;
+    width: 70%;
+    height: 100%;
+    vertical-align: top;
+    border: 1px black dotted;
+}
+#prikaz-slika{
+    border: red 1px solid;
+}
+.okvir-naziva-opisa-slika{
+    overflow: auto;
+    min-height: 300px;
+    max-height: 450px;
+}
+.sadrzaj-naziva-opisa-slika{
+    float: left;
+    width: 100%;
+}
+.podnaslov{
+    margin: 0px;
+    text-align: center;
+}
+table{
+    width: 100%;
+}
+.th-regija{
+    width: 25%;
+    text-decoration: none;
+}
+.th-naziv{
+    width: 25%;
+    text-decoration: none;
+}
+.th-opis{
+    width: 50%;
+    text-decoration: none;
+}
+th{
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+.td-regija{
+    width: 25%;
+    text-decoration: none;
+    padding-left: 3px;
+}
+.td-naziv{
+    width: 25%;
+    text-decoration: none;
+    padding-left: 3px;
+}
+.td-opis{
+    width: 50%;
+    text-decoration: none;
+    padding-left: 3px;
+}
+
+#naziv-slika>th{
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+#okvir-prikaza-slika{
+    width: 100%;
+    overflow: auto;
+
+}
+#prikaz-slika>h3{
+    text-align: center;
+    margin: 0px;
+}
+#sadrzaj-prikaza-slika{
+    min-height: 150px;
+    max-height: 450px;
+    width: 100%;
+    float: left;
+    padding-left: 10px;
+}
+.div-slika-inline{
+    display: inline-block;
+    width: 45%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+img{
+    max-width: 100%;
+}
+dt{
+    font-size: 20px;
+    font-style: italic;
+}
+figcaption{
+    text-align: center;
+}
