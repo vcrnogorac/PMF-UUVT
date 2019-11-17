@@ -1,0 +1,136 @@
+#zaglavlje{
+    height: 150px;
+    border-radius: 8px 8px 5px 5px;
+    background-image: url('slika-zaglavlje.png');
+}
+.zaglavlje-footer{
+    border: black 5px solid;
+}
+.srednji-dio{
+    height: 750px;
+    overflow: auto;
+}
+
+#lijevi-dio{
+    border-left: 2px black solid;
+    border-right: 2px black solid;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-image: url('lijeva-pozadina.png');
+    background-size: 100% 100%;
+}
+
+#desni-dio{
+    border-left: 2px black solid;
+    border-right: 2px black solid;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-image: url('desna-pozadina.png');
+    background-size: cover;
+    position: relative;
+    padding: 0px;
+}
+#footer{
+    height: 50px;
+    border-radius: 5px 5px 8px 8px;
+    background-color: rgba(190, 190, 190, 0.4);
+    font-size: 22px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#zaglavlje > h1{
+    text-align: center;
+    background-color: #4682B4;
+    color: white;
+    width: 430px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+}
+#zaglavlje > p{
+    width: 230px;
+    text-align: center;
+    background-color: #4682B4;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+#lijevi-dio > p{
+    background-color: rgba(70, 130, 132, 0.9);
+    color: white;
+    border-radius: 5px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+#lijevi-dio > p > a:link{
+    color: white;
+}
+#lijevi-dio > p > a:visited{
+    color: rgb(216, 209, 209);
+}
+#lijevi-dio > p > a:active{
+    cursor: wait;
+}
+ol{
+    background-color: rgba(70, 130, 132, 0.9);
+    color: white;
+    border-radius: 5px;
+}
+.slika{
+    width: 50%;
+    height: 275px;
+    text-align: center;
+    color: white;
+}
+#slika-1{
+    position: absolute;
+    top: 0px;
+    left: 0px
+}
+#slika-2{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+}
+#slika-3{
+    position: absolute;
+    top: 275px;
+    left: 0px;
+}
+#slika-4{
+    position: absolute;
+    top: 275px;
+    left: 50%;
+}
+img{
+    max-width: 100%;
+    max-height: 250px;
+}
+
+table{
+    background-color: rgba(70, 130, 132, 0.9);
+    width: 90%;
+    margin-left: 5%;
+    position: absolute;
+    top: 580px;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 3px;
+    empty-cells: hide;
+}
+th#ime{
+    width: 40%;
+}
+th#rodjen, th#visina, th#tezina {
+    width: 20%;
+}
+td, th{
+    border: white 1px solid;
+}

@@ -1,0 +1,155 @@
+#omotac{
+    width: 80%;
+    height: 1200px;
+    margin: auto;
+    border: thistle 7px double;
+    border-radius: 10px;
+    position: relative;
+}
+
+#zaglavlje{
+    background-image: url('java-slika-0.png');
+    height: 120px;
+    width: 100%;
+    border-bottom: forestgreen 2px dotted;
+}
+#footer{
+    position: absolute;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+    border-top: forestgreen 2px dotted;
+    text-align: center;
+    font-size: 22px;
+    background-color: lightblue;
+    vertical-align: middle;
+}
+
+#footer > p{
+    margin-top: 15px;
+}
+#footer > p:hover{
+    color: red;
+}
+#java-sajt{
+    position: fixed;
+    top: 5px;
+    right: 35px;
+}
+
+#strelica-gore{
+    position: fixed;
+    bottom: 5px;
+    right: 35px;
+}
+
+#srednji-dio{
+    widows: 100%;
+    height: 1030px;
+    background-image: url('java-slika-2.png');
+    background-position: bottom left;
+    background-repeat: repeat-x;
+    position: relative;
+    overflow: auto;
+}
+#java-logo{
+    width: 35%;
+    text-align: center;
+    height: 285px;
+}
+
+#java-logo > figure > img{
+    max-width: 100%;
+}
+
+#java-karakeristike{
+    position: relative;
+    left: 37%;
+    top: -285px;
+    height: 285px;
+    width: 60%;
+    border: 2px red dotted;
+    border-radius: 5px 10px 10px 5px;
+    padding: 5px;
+    background-color: rgb(230, 218, 218);
+    margin-bottom: -285px;
+}
+#java-karakeristike > h4 {
+    margin: 5px;
+}
+
+#java-karakeristike > ol > li{
+    font-size: 18px;
+}
+
+table{
+    width: 35%;
+    margin: 1%;
+    border: 3px double black;
+    border-collapse: collapse;
+}
+tr{
+    border: 3px double black;
+}
+
+.prva-kolona, .druga-kolona{
+    width: 25%;
+}
+th {
+    text-align: left;
+    font-style: italic;
+    font-weight: normal;
+    border: 1px solid black;
+    background-color: lightgray;
+}
+
+td.prva-kolona{
+    font-weight: bold;
+    border: 1px solid black;
+}
+td.druga-kolona{
+    border: 1px solid black;
+    text-align: center;
+}
+td.treca-kolona{
+    border: 1px solid black;
+    font-style: italic;
+}
+caption{
+    caption-side: bottom;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: blanchedalmond;
+}
+
+
+td.prva-kolona{
+    background-color: #FAEBD7
+}
+
+#div-slika{
+    height: 710px;
+    width: 60%;
+    position: absolute;
+    bottom: 5px;
+    right: 25px;
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+}
+figcaption{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: blanchedalmond;
+}
+
+tr:nth-child(2n){
+    background-color: #ffffff;
+}
+tr:nth-child(2n+1){
+    background-color: #f0f0f0;
+}

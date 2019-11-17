@@ -1,0 +1,83 @@
+#zaglavlje{
+    border: 1px solid red;
+    background-image: url('gradient-1.png');
+    text-align: center;
+    border-radius: 7px 7px 7px 7px;
+}
+#zaglavlje > img{
+    max-width: 100%;
+}
+.srednji-dio{
+    height: 700px;
+    overflow-x: auto;
+    border: red solid 1px;
+    background-color: rgb(226, 222, 222);
+}
+#footer{
+    border: 1px solid red;
+    background-image: url('gradient-1.png');
+    text-align: center;
+    border-radius: 7px 7px 7px 7px;
+}
+
+#desni{
+    padding: 0px;
+}
+
+table{
+    border: 7px double black;
+    border-collapse: separate;
+    border-spacing: 10px;
+    width: 96%;
+    margin: 2%;
+    background-color: rgb(235, 243, 243);
+}
+
+td{
+    padding: 5px;
+    border: 2px solid black;
+}
+.td-lijevi{
+    background-color: rgb(203, 219, 248);
+}
+.td-desni{
+    background-color: rgb(212, 209, 209);
+}
+
+td.td-lijevi > a:link{
+    color: black;
+}
+td.td-lijevi > a:visited{
+    color: rgb(24, 75, 9);
+}
+td.td-lijevi > a:hover{
+    color: black;
+    background-color: burlywood;
+}
+td.td-lijevi > a:active{
+    cursor: wait;
+}
+
+#tabela-1 > caption {
+    caption-side: bottom;
+    text-align: center;
+}
+
+#Guido-van-Rossum-img{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#Guido-van-Rossum-img > figure > img{
+    max-width: 100%;
+}
+
+#Guido-van-Rossum-podaci{
+    margin-top: 15px;
+    padding: 5px;
+}
+
+#Guido-van-Rossum-podaci > p > span {
+    font-weight: bold;
+}

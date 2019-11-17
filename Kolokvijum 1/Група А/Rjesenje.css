@@ -1,0 +1,135 @@
+#zaglavlje{
+    width: 100%;
+    text-align: center;
+    background-image: url('gradient.png');
+    border-bottom: goldenrod dotted 1px;
+}
+#logo{
+    margin-left: auto;
+    margin-right: auto;
+}
+#strelica-gore{
+    position: fixed;
+    bottom: 0px;
+    right: 25px;
+}
+#footer{
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    bottom: 0px;
+    border-top: goldenrod dotted 1px;
+    background-color: #E6E6FA;
+}
+#footer > h2 {
+    text-align: center;
+    margin: 3px;
+}
+#footer > p {
+    padding-left: 10px;
+    font-size: 18px;
+    margin-top: 3px;
+}
+#footer > p > span {
+    color: rgb(219, 102, 96);
+}
+#html-css-js-link:link{
+    color: rgb(137, 240, 34);
+}
+#html-css-js-link:visited{
+    color: rgb(140, 235, 248);
+}
+#html-css-js-link:hover{
+    color: white;
+    background-color: darkslategray;
+}
+#html-css-js-link:active{
+    cursor: wait;
+}
+
+.lijevi-desni-podnaslov {
+    margin: 3px;
+    border-bottom: black solid 1px;
+}
+.overflow-auto{
+    overflow: auto;
+    height: 600px;
+}
+ul {
+    margin-top: 3px;
+}
+table{
+    width: 96%;
+    margin: 2%;
+    border: black solid 1px;
+}
+td, th {
+    border-bottom: black dotted 1px;
+}
+
+tr:nth-child(even){
+    background-color: #ffffff;
+}
+tr:nth-child(odd){
+    background-color: #f0f0f0;
+}
+caption {
+    caption-side: bottom;
+    text-align: center;
+    }
+
+#css-slika{
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 749px){
+    #omotac{
+        width: 800px;
+        height: 900px;
+        border: 2px double red;
+        border-radius: 5px;
+        margin: auto;
+        position: relative;
+    }
+    #lijevi{
+        width: 280px;
+        display: inline-block;
+        border: 1px groove brown;
+        margin: 3px;
+        background-image: url('gradient-2.png');
+    }
+    #desni{
+        width: 500px;
+        display: inline-block;
+        border: 1px ridge brown;
+        margin-top: 3px;
+        margin-left: 7px;
+        background-image: url('gradient-2.png');
+    }
+}
+
+@media only screen and (max-width: 750px){
+    #lijevi{
+        width: 100%;
+        display: inline-block;
+        border: 1px groove brown;
+        margin: 3px;
+        background-color: rgba(95, 158, 160, 0.2)
+    }
+    #desni{
+        width: 100%;
+        display: inline-block;
+        border: 1px ridge brown;
+        margin: 3px;
+        background-color: rgba(95, 158, 160, 0.2)
+    }
+    #omotac{
+        width: 800px;
+        height: 1520px;
+        border: 2px double red;
+        border-radius: 5px;
+        margin: auto;
+        position: relative;
+    }
+}
