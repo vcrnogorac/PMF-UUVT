@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> jQuery - animacije </title>
+    <meta charset='utf-8'>
+
+    <style type='text/css'>
+        #help_box {
+            border: 2px solid red;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            width: 200px;
+            height: 200px;
+            display: none;
+        }
+
+        .close {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            height: 25px;
+            width: 30px;
+            font-weight: bold;
+            background-color: orange;
+            color: white;
+            font-family: Tahoma, sans-serif;
+            text-align: center;
+        }
+
+        .close:hover {
+            cursor: pointer;
+        }
+    </style>
+    <script src='js/jquery-3.3.1.min.js'></script>
+    <script type='text/javascript'>
+        $(document).ready(function () {
+            $('#help_box').delay(2000).slideDown(1000);
+            $('.close').on('click', function () {
+                $('#help_box').slideUp(1000);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id='help_box'>
+        <div class='close'> X </div>
+        <div>
+            <p> Prozor sa dodatnim informacijama </p>
+        </div>
+    </div>
+</body>
+
+</html>
