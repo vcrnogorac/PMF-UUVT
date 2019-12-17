@@ -1,0 +1,56 @@
+#div-novi-broj{
+    width: 350px;
+    border: solid 2px black;
+    border-radius: 5px;
+    background-color: rgb(247, 241, 241);
+    display: none;
+    position: fixed;
+    top: 50px;
+    left: 35%;
+}
+#div-novi-broj > div {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#div-novi-broj > div#novi-broj-zaglavlje{
+    margin-top: 0px;
+    height: 25px;
+    background-color: rgb(243, 223, 198);
+}
+.greska{
+    color: red;
+    font-weight: 600;
+}
+#rezultat{
+    position: fixed;
+    top: 50px;
+    left: 30%;
+    border: 2px solid black;
+    border-radius: 7px;
+    display: none;
+    min-width: 250px;
+}
+#rezultat-zaglavlje{
+    background-color: cadetblue;
+}
+#rezultat-zaglavlje > h4 {
+    margin-bottom: 0px;
+    text-align: center;
+}
+#rezultat-tijelo{
+    padding: 15px;
+    background-color: rgb(236, 222, 202);
+}
+#rezultat-greska{
+    padding: 15px;
+    background-color: rgb(236, 222, 202);
+    text-align: center;
+}
+#div-dugme-zatvori{
+    text-align: center;
+}
+input{
+    padding-left: 5px;
+    margin-left: 5px;
+}
