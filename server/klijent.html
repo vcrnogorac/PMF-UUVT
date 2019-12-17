@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Klijent</title>
+    <link rel="stylesheet" href="bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="klijent-css.css" type="text/css">
+</head>
+<body>
+    <div id="div-forma" class="container">
+        <form id="forma" action="" method="GET">
+            <fieldset class="form-group">
+                <legend>Zahtjevi</legend>
+                    
+                <div class="form-group">
+                    <div class="form-group-check">
+                        <input value="zbir" name="zbir" type="checkbox" id="zbir" class="form-check-input">
+                        <label for="zbir" class="form-check-label">Zbir</label>
+                    </div>
+    
+                    <div class="form-group-check">
+                        <input value="proizvod" name="proizvod" type="checkbox" id="proizvod" class="form-check-input">
+                        <label for="proizvod" class="form-check-label">Proizvod</label>
+                    </div>
+    
+                    <div class="form-group-check">
+                        <input value="prosjek" name="prosjek" type="checkbox" id="prosjek" class="form-check-input">
+                        <label for="prosjek" class="form-check-label">Prosjek</label>
+                    </div>
+    
+                    <div class="form-group-check">
+                        <input value="minimum" name="minimum" type="checkbox" id="minimum" class="form-check-input">
+                        <label for="minimum" class="form-check-label">Minimum</label>
+                    </div>
+    
+                    <div class="form-group-check">
+                        <input value="maximum" name="maximum" type="checkbox" id="maximum" class="form-check-input">
+                        <label for="maximum" class="form-check-label">Maksimum</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset id="fieldset-brojevi">
+                <legend>Brojevi</legend>
+                <input type="button" id="novi-broj" value="Novi broj">
+            </fieldset>
+
+            <br>
+    
+            <div class="form-group">
+                <input value="Generiši" class="btn btn-primary" id="dugme" name="submit" type="submit">
+            </div>
+        </form>
+    </div>
+
+    <!--
+    Div, odnosno modal, pa unos novog broja
+    on ima svojstva display: none, position: fixed.
+    Klikom na dugme 'Novi broj', ovaj div se prikazuje.
+    Svojstvo display: none se opet postavi klikom na dugme Potvrdi i Odustani
+    -->
+    <div id="div-novi-broj">
+        <div id="novi-broj-zaglavlje">
+            <p>NOVI BROJ</p>
+        </div>
+        <div>
+            <label for="input-novi-broj">Unesite novi Broj:</label>
+            <input id="input-novi-broj" type="text" size="15">
+            <p id="novi-broj-greska" class="greska"></p>
+        </div>
+       
+        <div class="div-dugme">    
+            <input id="btn-novi-broj-potvrdi" type="button" value="Potvrdi">
+            <input id="btn-novi-broj-odustani" type="button" value="Odustani">
+        </div>
+    </div>
+
+    <!--
+        Div, odnosno modal, za prikazivanje rezultata koji vraca server
+        ima svojstvo display: none, position: fixed
+        Ovaj div se prikazuje u success funkciji u ajax-u.
+        Sadrzi labele i input za svaki od mogucih zahtjeva(zbir, proizvod, prosjek, minimum i maximum).
+        Prikazace se samo oni zahtjevi koji su cekirani. Ovaj dio je obradjen u javascript
+    -->
+    <div id="rezultat">
+        <div id="rezultat-zaglavlje">
+            <h4>Rezultat:</h4>
+        </div>
+
+        <div id="rezultat-greska" class="greska"></div>
+
+        <div id="rezultat-tijelo">
+            <div id="rezultat-zbir">
+                <label for="input-rezultat-zbir">Zbir unesenih brojeva je: </label>
+                <input type="text" name="rezultat-zbir" id="input-rezultat-zbir" value="" size="15" disabled>
+            </div>
+            <div id="rezultat-proizvod">
+                <label for="input-rezultat-proizvod">Proizvod unesenih brojeva je: </label>
+                <input type="text" name="rezultat-proizvod" id="input-rezultat-proizvod" value="" size="15" disabled>
+            </div>
+            <div id="rezultat-prosjek">
+                <label for="input-rezultat-prosjek">Prosjek unesenih brojeva je: </label>
+                <input type="text" name="rezultat-prosjek" id="input-rezultat-prosjek" value="" size="15" disabled>
+            </div>
+            <div id="rezultat-minimum">
+                <label for="input-rezultat-minimum">Minimalan uneseni broj je: </label>
+                <input type="text" name="rezultat-minimum" id="input-rezultat-minimum" value="" size="15" disabled>
+            </div>
+            <div id="rezultat-maximum">
+                <label for="input-rezultat-maximum">Minimalan uneseni broj je: </label>
+                <input type="text" name="rezultat-maximum" id="input-rezultat-maximum" value="" size="15" disabled>
+            </div>
+            
+            <div id="div-dugme-zatvori">
+                <input type="button" value="Zatvori" id="btn-zatvori">
+            </div>
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="klijent-javascript.js"></script>
+
+</body>
+</html>
