@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UVT KLIJENT-SERVER</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="klijent-css.css">
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="klijent-js.js"></script>
+</head>
+<body>
+    <div id="div-forma" class="container login-forma">
+        <form action="" method="GET" id="korisnicka-forma" novalidate>
+            <div class="form-group registracija">
+                <label for="ime">Ime:</label>
+                <input type="text" id="ime">
+            </div>
+            <div class="form-group registracija">
+                <label for="prezime">Prezime:</label>
+                <input type="text" id="prezime">
+            </div>
+            <div class="form-group">
+                <label for="korisnicko-ime">Korisnicko ime:</label>
+                <input type="text" id="korisnicko-ime">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password">
+            </div>
+            <div class="form-group registracija">
+                <label for="potvrdi-password">Potvrdi password:</label>
+                <input type="password" id="potvrdi-password">
+            </div>
+
+            <div id="div-error" class="form-group">
+                <p id="p-error"></p>
+            </div>
+            
+            <div class="form-group" id="submit-group">
+                <input type="submit" value="Logovanje" id="btn-submit" class="btn btn-primary">
+                <span id="span-registracija">Registrujte se</span>
+            </div>
+        </form>
+    </div>
+
+    <div id="div-rezultat">
+        <p id="poruka"></p>
+        <input type="button" value="Zatvoti" id="btn-zatvori-rezultat">
+        <input type="button" value="Odjevi se" disabled>
+        <input type="button" value="Aktivni korisnici" disabled>
+        <input type="button" value="Svi korisnici" disabled>
+    </div>
+    
+</body>
+</html>
