@@ -1,0 +1,27 @@
+#div-forma{
+    border: 2px solid black;
+    width: 350px;
+    background-color: rgb(206, 217, 218);
+}
+
+#div-rezultat{
+    border: 2px solid black;
+    width: 350px;
+    background-color: rgb(206, 217, 218);
+    position: fixed;
+    left: 40%;
+    top:25px;
+    display: none;
+    padding: 7px;
+    text-align: center;
+}
+
+#submit-group{
+    text-align: center;
+}
+
+#div-error, #poruka{
+    text-align: center;
+    color: red;
+}
+

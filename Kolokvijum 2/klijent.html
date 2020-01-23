@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drugi kolokvijum iz UVT</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="klijent-css.css">
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="klijent-js.js"></script>
+</head>
+<body>
+    <div id="div-forma" class="container login-forma">
+        <form action="" method="GET" id="korisnicka-forma" novalidate>
+            
+            <fieldset class="form-group">
+                <legend>Unos niske</legend>
+                <div class="form-group">
+                    <label for="niska-1">Niska 1:</label>
+                    <input type="text" id="niska-1">
+                </div>
+                <div class="form-group">
+                    <label for="niska-2">Niska 2:</label>
+                    <input type="text" id="niska-2">
+                </div>
+            </fieldset>
+
+            <div id="div-error" class="form-group">
+                <p id="p-error"></p>
+            </div>
+            
+            <div class="form-group" id="submit-group">
+                <input type="submit" value="Generisi" id="btn-submit" class="btn btn-primary">
+            </div>
+        </form>
+    </div>
+
+    <div id="div-rezultat">
+        <p id="poruka"></p>
+        <div class="uspjesan-rezultat">
+            <h4>Niska 1</h4>
+            <p id="niska-1-no-sg" class="rez-niska-1">Niska ne sadrzi samoglasnike</p>
+            <p id="niska-1-sadrzi-sg" class="rez-niska-1">Niska 1 sadrzi sljedeci broj samoglasnika</p>
+            
+            <div id="div-niska-1-a" class="rez-niska-1">
+                <label for="niska-1-a">Slovo A </label>
+                <input type="text" id="niska-1-a" class="sg-input" disabled>
+            </div>
+            <div id="div-niska-1-e" class="rez-niska-1">
+                <label for="povrsina">Slovo E </label>
+                <input type="text" id="niska-1-e" class="sg-input" disabled>
+            </div>
+            <div id="div-niska-1-i" class="rez-niska-1">
+                <label for="povrsina">Slovo I </label>
+                <input type="text" id="niska-1-i" class="sg-input" disabled>
+            </div>
+            <div id="div-niska-1-o" class="rez-niska-1">
+                <label for="povrsina">Slovo O </label>
+                <input type="text" id="niska-1-o" class="sg-input" disabled>
+            </div>
+            <div id="div-niska-1-u" class="rez-niska-1">
+                <label for="povrsina">Slovo U </label>
+                <input type="text" id="niska-1-u" class="sg-input" disabled>
+            </div>
+        </div>
+
+        <div class="uspjesan-rezultat">
+            <h4>Niska 2</h4>
+            <p id="niska-2-no-sg" class="rez-niska-2">Niska ne sadrzi samoglasnike</p>
+            <p id="niska-2-sadrzi-sg" class="rez-niska-2">Niska 2 sadrzi sljedeci broj samoglasnika</p>
+            
+            <div id="div-niska-2-a" class="rez-niska-2">
+                <label for="niska-2-a">Slovo A </label>
+                <input type="text" id="niska-2-a" class="sg-input" disabled>
+            </div>
+            <div id="div-niska-2-e" class="rez-niska-2">
+                <label for="niska-2-e">Slovo E </label>
+                <input type="text" id="niska-2-e" class="sg-input" disabled>
+            </div>
+            <div id="div-niska-2-i" class="rez-niska-2">
+                <label for="niska-2-i">Slovo I </label>
+                <input type="text" id="niska-2-i" class="sg-input" disabled>
+            </div>
+            <div id="div-niska-2-o" class="rez-niska-2">
+                <label for="niska-2-o">Slovo O </label>
+                <input type="text" id="niska-2-o" class="sg-input" disabled>
+            </div>
+            <div id="div-niska-2-u" class="rez-niska-2">
+                <label for="niska-2-u">Slovo U </label>
+                <input type="text" id="niska-2-u" class="sg-input" disabled>
+            </div>
+        </div>
+
+
+        <input type="button" value="Zatvoti" id="btn-zatvori-rezultat" class="btn btn-primary">
+    </div>
+    
+</body>
+</html>
